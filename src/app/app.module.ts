@@ -10,12 +10,19 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { EmailComponent } from './components/email/email.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import { EmailService } from './service/email.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    EmailComponent
   ],
   imports: [
     BrowserModule,
@@ -24,9 +31,13 @@ import {MatIconModule} from '@angular/material/icon';
     MatSnackBarModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule, 
+    MatInputModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [MatSnackBarModule],
+  providers: [MatSnackBarModule, EmailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
