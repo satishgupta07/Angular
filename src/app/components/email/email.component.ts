@@ -15,6 +15,8 @@ export class EmailComponent implements OnInit {
     message:""
   }
 
+  flag:boolean = false;
+
   constructor(private email:EmailService, private snak:MatSnackBar) { }
 
   ngOnInit(): void {
@@ -29,14 +31,17 @@ export class EmailComponent implements OnInit {
         return;
     }
 
+    this.flag=true;
     this.email.sendEmail(this.data).subscribe(
-      response=> {
-        console.log(response);
+      response=>{
+        console.log(response);   
+        this.flag=false; 
+        this.snak.open("Send Success ","OK")  
       },
       error=>{
-        console.log(error);
+        console.log(error); 
       }
-    )
+    ) 
   }
 
 }
