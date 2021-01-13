@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
-  myEvent(evt) {
-    console.log(evt);
+  currentVal = "";
+  getVal(val: any) {
+    console.log(val);
+    this.currentVal = val;
   }
 }

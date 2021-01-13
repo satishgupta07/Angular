@@ -1,12 +1,5 @@
-<h1>Important Events in Angular</h1>
-<button (click)="myEvent('Click Event')" >Click Me</button>
-<br><br>
-<input type="text" #box (keyup.enter)="myEvent(box.value)" />
-<br><br>
-<input type="text" (blur)="myEvent('blur event')" />
-<br><br>
-<div
-  (mouseover)="myEvent('mouse in')"
-  style="background-color: aqua;">
-  Mouse Event
-</div>
+<h1>Get Text Value in Angular</h1>
+<input type="text" #box />
+<button (click)="getVal(box.value)">Get Value</button>
+<h2>{{currentVal}}</h2>
+
