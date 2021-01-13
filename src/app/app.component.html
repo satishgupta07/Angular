@@ -1,7 +1,14 @@
-<app-header></app-header>
+<h1>Style Binding in Angular</h1>
 
-<h1>Header and Footer in Angular</h1>
+<h1 style="color: red;">Header 1</h1>
 
-<app-footer></app-footer>
+<h1 [style.color]="'green'">Header 2</h1>
+<h1 [style.backgroundColor]="'blue'">Header 2</h1>
+
+<h1 [style.color]="color">Dynamic Style</h1>
+
+<button (click)="updateColor()">Update Color</button>
+
+<h1 [style.color]="err?'red':'green'">Conditional Style</h1>
 
 
