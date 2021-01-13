@@ -28,3 +28,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Create New Component
    ng g c userList
+
+## Angular Module
+   A module is a mechanism to group components, directives, pipes and services that are related
+   creates a module users -> ng g m users   
+   creates a login component inside users module -> ng g c users/login
+                                                    ng g c users/signup
