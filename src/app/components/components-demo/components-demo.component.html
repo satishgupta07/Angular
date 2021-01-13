@@ -1,11 +1,12 @@
 <div class="columns">
     <div class="column">
-       <ngr-user-card></ngr-user-card>
+        <!-- [user] : property binding -->
+       <ngr-user-card [user]="users[0]"></ngr-user-card>
     </div>
     <div class="column">
-        <ngr-user-card></ngr-user-card>
+        <ngr-user-card [user]="users[1]"></ngr-user-card>
     </div>
     <div class="column">
-        <ngr-user-card></ngr-user-card>
+        <ngr-user-card [user]="users[2]"></ngr-user-card>
     </div>
   </div>
