@@ -34,3 +34,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
    creates a module users -> ng g m users   
    creates a login component inside users module -> ng g c users/login
                                                     ng g c users/signup
+
+## Adding Bootstrap
+   ng add @ng-bootstrap/ng-bootstrap
