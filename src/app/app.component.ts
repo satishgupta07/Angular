@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
+  name = 'Satish Kumar Gupta';
+  getCity(){
+    return "Lucknow"
+  };
+  obj = {
+    name: 'Peter',
+    age: 20
+  };
+  arr = ['bruce','peter','john'];
+  siteUrl=window.location.href
 }
