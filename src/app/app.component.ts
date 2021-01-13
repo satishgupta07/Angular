@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
-  currentVal = "";
-  getVal(val: any) {
-    console.log(val);
-    this.currentVal = val;
+  name= "bruce";
+  disabledBox = true;
+  enableBox() {
+    this.disabledBox=false;
   }
 }
