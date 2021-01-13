@@ -1,13 +1,14 @@
-<h1>Switch Case in Angular</h1>
-<div [ngSwitch]="color">
-  	<h2 style="color: red;" *ngSwitchCase="'red'" >
-      Red Color Bock
-    </h2>
-    <h2 style="color: green;" *ngSwitchCase="'green'" >
-      Green Color Bock
-    </h2>
-    <h2 style="color: blue;" *ngSwitchCase="'blue'" >
-      Blue Color Bock
-    </h2>
-</div>
+<h1>For Loop in Angular</h1>
+<table border="1">
+   <tr>
+      <td>Name</td>
+      <td>Age</td>
+      <td>Email</td>
+   </tr>
+   <tr *ngFor="let item of data">
+      <td>{{item.name}}</td>
+      <td>{{item.age}}</td>
+      <td>{{item.email}}</td>
+   </tr>
+</table>
 
