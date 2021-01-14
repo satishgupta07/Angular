@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { BuiltInDirectivesDemoComponent } from './built-in-directives-demo/built-in-directives-demo.component';
 import { UserCardComponent } from './user-card/user-card.component';
 import { TopicNgForComponent } from './topic-ng-for/topic-ng-for.component';
+import { TopicShowHideComponent } from './topic-show-hide/topic-show-hide.component';
 
 
 
 @NgModule({
-  declarations: [BuiltInDirectivesDemoComponent, UserCardComponent, TopicNgForComponent],
+  declarations: [BuiltInDirectivesDemoComponent, UserCardComponent, TopicNgForComponent, TopicShowHideComponent],
   imports: [
     CommonModule
   ],
