@@ -19,7 +19,7 @@ export class TopicEventBindingComponent implements OnInit {
     this.name = (event.target as HTMLInputElement).value;
   }
 
-  onInput(event: KeyboardEvent) {
+  onInput(event: KeyboardEvent){
     this.name = (event.target as HTMLInputElement).value;
   }
 
@@ -30,5 +30,5 @@ export class TopicEventBindingComponent implements OnInit {
   showMessageFromInput(input: HTMLInputElement) {
     this.message = input.value;
   }
-  
+
 }
