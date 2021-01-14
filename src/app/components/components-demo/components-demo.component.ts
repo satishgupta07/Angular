@@ -7,7 +7,7 @@ import { User } from '../models/user.interface';
   styleUrls: ['./components-demo.component.css']
 })
 export class ComponentsDemoComponent implements OnInit {
-  
+  name!: string;
   users: User[] = [
     {
       name: 'Arun Gupta',
@@ -29,6 +29,10 @@ export class ComponentsDemoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onUserViewed(user: User) {
+    this.name = user.name;
   }
 
 }
