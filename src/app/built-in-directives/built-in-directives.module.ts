@@ -5,13 +5,14 @@ import { UserCardComponent } from './user-card/user-card.component';
 import { TopicNgForComponent } from './topic-ng-for/topic-ng-for.component';
 import { TopicShowHideComponent } from './topic-show-hide/topic-show-hide.component';
 import { TopicClassAndStyleComponent } from './topic-class-and-style/topic-class-and-style.component';
+import { BuiltInDirectivesRoutingModule } from './built-in-directives-routing.module';
 
 
 
 @NgModule({
   declarations: [BuiltInDirectivesDemoComponent, UserCardComponent, TopicNgForComponent, TopicShowHideComponent, TopicClassAndStyleComponent],
   imports: [
-    CommonModule
+    CommonModule, BuiltInDirectivesRoutingModule
   ],
   exports: [BuiltInDirectivesDemoComponent]
 })

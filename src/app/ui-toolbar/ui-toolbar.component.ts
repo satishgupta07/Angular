@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'ngr-ui-toolbar',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UiToolbarComponent implements OnInit {
 
-  constructor() { }
+  // request Angular for a service dependency
+  // Dependency (constructor) Injection
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
+  }
+
+  handleCustomDirectivesClick() {
+    this.router.navigate(['/custom-directives']);
   }
 
 }
