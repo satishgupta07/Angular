@@ -7,6 +7,7 @@ import { ComponentsModule } from './components/components.module';
 import { UiToolbarComponent } from './ui-toolbar/ui-toolbar.component';
 import { BuiltInDirectivesModule } from './built-in-directives/built-in-directives.module';
 import { PipesModule } from './pipes/pipes.module';
+import { CustomDirectivesModule } from './custom-directives/custom-directives.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PipesModule } from './pipes/pipes.module';
     AppRoutingModule,
     ComponentsModule,
     BuiltInDirectivesModule,
-    PipesModule
+    PipesModule,
+    CustomDirectivesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
