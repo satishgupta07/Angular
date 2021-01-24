@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ComponentsDemoComponent } from './components/components-demo/components-demo.component';
 import { CustomDirectivesDemoComponent } from './custom-directives/custom-directives-demo/custom-directives-demo.component';
+import { FormsComponent } from './forms-demo/forms/forms.component';
 import { PipesDemoComponent } from './pipes/pipes-demo/pipes-demo.component';
 
 const routes: Routes = [
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'custom-directives',
     component: CustomDirectivesDemoComponent,
+  },
+  {
+    path: 'forms',
+    component: FormsComponent,
   },
   {
     path: '**', // catch all

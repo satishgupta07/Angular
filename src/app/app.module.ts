@@ -8,6 +8,7 @@ import { UiToolbarComponent } from './ui-toolbar/ui-toolbar.component';
 import { BuiltInDirectivesModule } from './built-in-directives/built-in-directives.module';
 import { PipesModule } from './pipes/pipes.module';
 import { CustomDirectivesModule } from './custom-directives/custom-directives.module';
+import { FormsDemoModule } from './forms-demo/forms-demo.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CustomDirectivesModule } from './custom-directives/custom-directives.mo
     ComponentsModule,
     BuiltInDirectivesModule,
     PipesModule,
-    CustomDirectivesModule
+    CustomDirectivesModule,
+    FormsDemoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
